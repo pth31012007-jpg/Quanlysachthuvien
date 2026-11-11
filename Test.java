@@ -3,6 +3,15 @@ import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) {
+                // Tuan 8: thu kiem tra du lieu trong setter
+        System.out.println("=== TUAN 8: Kiem tra setter ===");
+        Sach thu = new Sach("S99", "Sach thu", "Tac gia", 2020, 5);
+        thu.setNamXuatBan(3000);   // sai: lon hon nam hien tai
+        thu.setSoLuong(-5);        // sai: so luong am
+        thu.setNamXuatBan(2021);   // dung
+        thu.setSoLuong(8);         // dung
+        thu.hienThiThongTin();
+        
         // Yeu cau 3: Tao doi tuong tu lop Sach
         System.out.println("=== YEU CAU 3: Tao doi tuong Sach ===");
         Sach s1 = new Sach("S01", "Lap trinh Java", "Nguyen Van A", 2022, 10);
